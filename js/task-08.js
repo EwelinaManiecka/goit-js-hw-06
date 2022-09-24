@@ -14,7 +14,8 @@ form.addEventListener("submit", (event) => {
 form.addEventListener("submit", Submit);
 
 
-//działa tak samo:
+//nie wypisuje w konsoli danych użytkowanika z logowania
+//ani hasła
 
 // function operateSubmit(event) {
 //     event.preventDefault();
