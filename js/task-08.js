@@ -5,8 +5,13 @@ form.addEventListener("submit", (event) => {
     const { email, password } = event.currentTarget;
     if (email.value === "" || password === "") {
         return alert("Uzupełnij wszystkie pola");
+    } else {
+        const result = { email: email.value, password: password.value};
+        console.log(result);
     }
+    event.currentTarget.reset();
 });
+form.addEventListener("submit", Submit);
 
 
 //działa tak samo:
@@ -20,5 +25,3 @@ form.addEventListener("submit", (event) => {
 // };
 
 // form.addEventListener("submit", operateSubmit);
-
-

@@ -8,3 +8,10 @@ let body = document.body;
 changeColor.addEventListener("click", () => {
   body.style.backgroundColor = getRandomHexColor();
 });
+
+const colorSpan = document.querySelector(".color");
+const changeNameColor = () => {
+  colorSpan.textContent = `${getRandomHexColor()};`
+}
+
+changeColor.addEventListener("click", changeNameColor)
